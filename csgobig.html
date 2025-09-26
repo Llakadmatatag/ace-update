@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSGOBig Leaderboard - GoldAce</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/csgobig.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="csgobig-page">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="GoldAce Logo">
+                <span class="logo-text">GoldAce</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#bonuses">Bonus</a>
+                <a href="csgoroll.html" class="active">Leaderboard</a>
+                <a href="https://discord.gg/rTdh49H2" class="discord-btn" target="_blank"><i class="fab fa-discord"></i> Server</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="leaderboard-section section-animate">
+            <div class="container">
+                <h1>LEADERBOARD</h1>
+                <div class="logo-selector">
+                    <a href="csgoroll.html" class="logo-btn" data-leaderboard="csgoroll">
+                        <img src="assets/images/logos/csgoroll.webp" alt="CSGORoll" class="logo-img">
+                    </a>
+                    <a href="csgobig.html" class="logo-btn active" data-leaderboard="big">
+                        <img src="assets/images/logos/big.png" alt="Big" class="logo-img">
+                    </a>
+                </div>
+                <div class="leaderboard-container">
+                    <div class="leaderboard-header">
+                        <h2>150 <img src="assets/images/big-coin.svg" alt="Coins" class="coin-icon"> CSGOBig Monthly Leaderboard</h2>
+                        <p class="leaderboard-note">
+                            <i class="fas fa-info-circle"></i>
+                            Every wager made with the code <span class="highlight">GoldAce</span> will be automatically counted in this leaderboard.
+                        </p>
+                        <div class="countdown-timer">
+                            <div class="countdown-title">Time Remaining:</div>
+                            <div class="countdown-display">
+                                <div class="countdown-item">
+                                    <span id="days">00</span>
+                                    <span class="countdown-label">Days</span>
+                                </div>
+                                <div class="countdown-separator">:</div>
+                                <div class="countdown-item">
+                                    <span id="hours">00</span>
+                                    <span class="countdown-label">Hours</span>
+                                </div>
+                                <div class="countdown-separator">:</div>
+                                <div class="countdown-item">
+                                    <span id="minutes">00</span>
+                                    <span class="countdown-label">Minutes</span>
+                                </div>
+                                <div class="countdown-separator">:</div>
+                                <div class="countdown-item">
+                                    <span id="seconds">00</span>
+                                    <span class="countdown-label">Seconds</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Peringkat 1-3 -->
+                        <div class="leaderboard-top3">
+                            <!-- Peringkat 2 -->
+                            <div class="rank-card rank-2">
+                                <div class="rank-badge">2</div>
+                                <div class="rank-avatar">
+                                    <img src="https://via.placeholder.com/80/2d180f/ffd700?text=2nd" alt="2nd Place" class="avatar-img">
+                                </div>
+                                <div class="rank-username">Player2</div>
+                                <div class="rank-wagered">
+                                    <span class="amount">$9,876</span>
+                                </div>
+                                <div class="rank-prize">
+                                    <i class="fas fa-trophy"></i>
+                                    <span class="amount">$500</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Peringkat 1 -->
+                            <div class="rank-card rank-1">
+                                <div class="rank-badge">1</div>
+                                <div class="rank-avatar">
+                                    <img src="https://via.placeholder.com/100/2d180f/ffd700?text=1st" alt="1st Place" class="avatar-img">
+                                </div>
+                                <div class="rank-username">Player1</div>
+                                <div class="rank-wagered">
+                                    <span class="amount">$12,345</span>
+                                </div>
+                                <div class="rank-prize">
+                                    <i class="fas fa-trophy"></i>
+                                    <span class="amount">$1,000</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Peringkat 3 -->
+                            <div class="rank-card rank-3">
+                                <div class="rank-badge">3</div>
+                                <div class="rank-avatar">
+                                    <img src="https://via.placeholder.com/70/2d180f/ffd700?text=3rd" alt="3rd Place" class="avatar-img">
+                                </div>
+                                <div class="rank-username">Player3</div>
+                                <div class="rank-wagered">
+                                    <span class="amount">$7,654</span>
+                                </div>
+                                <div class="rank-prize">
+                                    <i class="fas fa-trophy"></i>
+                                    <span class="amount">$250</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tabel Peringkat 4+ -->
+                        <div class="leaderboard-table-container">
+                            <h3>Top Players</h3>
+                            <div class="table-responsive">
+                                <table class="leaderboard-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Rank</th>
+                                            <th>Username</th>
+                                            <th>Wagered</th>
+                                            <th>Prize</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Baris 4-10 akan diisi oleh JavaScript -->
+                                        <tr>
+                                            <td>4</td>
+                                            <td>
+                                                <div class="player-info">
+                                                    <img src="https://via.placeholder.com/40/2d180f/ffd700?text=4th" alt="Player4" class="table-avatar">
+                                                    <span>Player4</span>
+                                                </div>
+                                            </td>
+                                            <td>$6,789</td>
+                                            <td>$100</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>
+                                                <div class="player-info">
+                                                    <img src="https://via.placeholder.com/40/2d180f/ffd700?text=5th" alt="Player5" class="table-avatar">
+                                                    <span>Player5</span>
+                                                </div>
+                                            </td>
+                                            <td>$5,678</td>
+                                            <td>$75</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>
+                                                <div class="player-info">
+                                                    <img src="https://via.placeholder.com/40/2d180f/ffd700?text=6th" alt="Player6" class="table-avatar">
+                                                    <span>Player6</span>
+                                                </div>
+                                            </td>
+                                            <td>$4,567</td>
+                                            <td>$50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>
+                                                <div class="player-info">
+                                                    <img src="https://via.placeholder.com/40/2d180f/ffd700?text=7th" alt="Player7" class="table-avatar">
+                                                    <span>Player7</span>
+                                                </div>
+                                            </td>
+                                            <td>$3,456</td>
+                                            <td>$25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>
+                                                <div class="player-info">
+                                                    <img src="https://via.placeholder.com/40/2d180f/ffd700?text=8th" alt="Player8" class="table-avatar">
+                                                    <span>Player8</span>
+                                                </div>
+                                            </td>
+                                            <td>$2,345</td>
+                                            <td>$10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>
+                                                <div class="player-info">
+                                                    <img src="https://via.placeholder.com/40/2d180f/ffd700?text=9th" alt="Player9" class="table-avatar">
+                                                    <span>Player9</span>
+                                                </div>
+                                            </td>
+                                            <td>$1,234</td>
+                                            <td>$5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>
+                                                <div class="player-info">
+                                                    <img src="https://via.placeholder.com/40/2d180f/ffd700?text=10th" alt="Player10" class="table-avatar">
+                                                    <span>Player10</span>
+                                                </div>
+                                            </td>
+                                            <td>$1,000</td>
+                                            <td>$5</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- Pagination Controls -->
+                            <div class="pagination-container">
+                                <div class="pagination">
+                                    <!-- Pagination buttons will be added here by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer section-animate">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Section 1: About -->
+                <div class="footer-section">
+                    <h4>About GoldAce</h4>
+                    <p>Your trusted source for the best CS:GO gambling and trading bonuses. Join our community for exclusive giveaways and rewards.</p>
+                </div>
+
+                <!-- Section 2: Quick Links -->
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#bonuses">Bonuses</a></li>
+                        <li><a href="csgoroll.html">Leaderboard</a></li>
+                    </ul>
+                </div>
+
+                <!-- Section 3: Social Media -->
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="https://kick.com/GoldAceCS" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <img src="assets/images/kick-logo.webp" alt="Kick" class="kick-logo">
+                            <span>Kick</span>
+                        </a>
+                        <a href="https://www.youtube.com/@GoldAceCS" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-youtube"></i> YouTube
+                        </a>
+                        <a href="https://discord.gg/rTdh49H2" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-discord"></i> Discord
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Section 4: 18+ Warning -->
+                <div class="footer-section warning-section">
+                    <div class="age-warning">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span>18+ Only</span>
+                    </div>
+                    <p class="responsible-gambling">
+                        Please gamble responsibly. Gambling can be addictive. Play responsibly and in moderation.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section 5: Copyright & Credits -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 GoldAce. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/csgobig.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/header-scroll.js"></script>
+</body>
+</html>

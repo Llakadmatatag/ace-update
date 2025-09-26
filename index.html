@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldAce</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <img src="assets/images/logo.png" alt="GoldAce Logo">
+                <span class="logo-text">GoldAce</span>
+            </div>
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+            </div>
+            <p class="loading-text">Loading...</p>
+        </div>
+    </div>
+    
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="GoldAce Logo">
+                <span class="logo-text">GoldAce</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#bonuses">Bonus</a>
+                <a href="csgoroll.html">Leaderboard</a>
+                <a href="https://discord.gg/rTdh49H2" class="discord-btn" target="_blank"><i class="fab fa-discord"></i> Server</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero section-animate">
+            <div class="hero-container">
+                <div class="hero-top">
+                    <div class="hero-top-left">
+                        <div class="hero-text">
+                            <p class="tagline">Your All-in-One Hub for Leaderboards, Streams & Rewards. Use code <span class="highlight-code">GoldAce</span> and level up your perks!</p>
+                        </div>
+                        <div class="hero-buttons">
+                            <a href="#bonuses" class="hero-btn primary-btn">View Bonuses</a>
+                            <a href="#leaderboard" class="hero-btn secondary-btn">View Leaderboard</a>
+                        </div>
+                    </div>
+                    <div class="hero-top-right">
+                        <div class="hero-logo-wrap">
+                            <!-- Floating media placeholders (set background-image later) -->
+                            <div class="floating-media fm-1" aria-hidden="true"></div>
+                            <div class="floating-media fm-2" aria-hidden="true"></div>
+                            <div class="floating-media fm-3" aria-hidden="true"></div>
+                            <div class="floating-media fm-4" aria-hidden="true"></div>
+
+                            <div class="hero-logo">
+                                <img src="assets/images/logo.png" alt="GoldAce Logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-bottom">
+                    <div class="hero-left">
+                        <div class="promo-card">
+                            <div class="promo-card-header">
+                                <i class="fa-solid fa-gift"></i>
+                                <h3>Daily Promo Code & Giveaways</h3>
+                            </div>
+                            <p class="promo-card-desc">Claim exclusive daily promo codes and giveaways on our Discord server. Join now and get the bonus!</p>
+                            <div class="promo-actions">
+                                <a href="https://discord.gg/rTdh49H2" target="_blank" class="hero-btn primary-btn">
+                                    <i class="fab fa-discord"></i>
+                                    Join Discord
+                                </a>
+                            </div>
+                            <small class="promo-note">Code and Giveaways update on channel #Giveaways</small>
+                        </div>
+                    </div>
+                    <div class="hero-right">
+                        <div class="stream-container">
+                            <iframe src="https://player.kick.com/goldacecs" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bonuses" class="bonus-section section-animate">
+            <div class="container">
+                <h2 class="section-title">Bonuses & Referral Code</h2>
+                <div class="bonus-grid">
+                    <!-- CSGORoll Card -->
+                    <div class="bonus-card" style="background-image: url('assets/images/roll-bg.jpg')">
+                        <div class="bonus-bg"></div>
+                        <div class="bonus-content">
+                            <div class="bonus-logo">
+                                <img src="assets/images/logos/csgoroll.webp" alt="CSGORoll Logo" class="logo-img">
+                            </div>
+                            <div class="bonus-code">
+                                <span>Code: <strong>GOLDACE</strong></span>
+                            </div>
+                            <ul class="bonus-list">
+                                <li>Free Case on Sign Up</li>
+                                <li>5% Deposit Bonus</li>
+                                <li>Leaderboard</li>
+                            </ul>
+                            <a href="https://www.csgoroll.com/r/GOLDACE" target="_blank" rel="noopener noreferrer" class="bonus-btn">Sign Up</a>
+                        </div>
+                    </div>
+                    
+                    <!-- CSGOBig Card -->
+                    <div class="bonus-card" style="background-image: url('assets/images/big-bg.png')">
+                        <div class="bonus-bg"></div>
+                        <div class="bonus-content">
+                            <div class="bonus-logo">
+                                <img src="assets/images/logos/big.png" alt="CSGOBig Logo" class="logo-img">
+                            </div>
+                            <div class="bonus-code">
+                                <span>Code: <strong>GOLDACE</strong></span>
+                            </div>
+                            <ul class="bonus-list">
+                                <li>Free Case on Sign Up</li>
+                                <li>5% Deposit Bonus</li>
+                                <li>Leaderboard</li>
+                            </ul>
+                            <a href="https://csgobig.com/#!/r/goldace" target="_blank" rel="noopener noreferrer" class="bonus-btn">Sign Up</a>
+                        </div>
+                    </div>
+                    
+                    <!-- RainGG Card -->
+                    <div class="bonus-card" style="background-image: url('assets/images/rain-bg.png')">
+                        <div class="bonus-bg"></div>
+                        <div class="bonus-content">
+                            <div class="bonus-logo">
+                                <img src="assets/images/logos/rain.png" alt="RainGG Logo" class="logo-img">
+                            </div>
+                            <div class="bonus-code">
+                                <span>Code: <strong>GOLDACE</strong></span>
+                            </div>
+                            <ul class="bonus-list">
+                                <li>Free Case on Sign Up</li>
+                                <li>5% Deposit Bonus</li>
+                                <li>Daily Free Case</li>
+                            </ul>
+                            <a href="https://rain.gg/r/GoldAce" target="_blank" rel="noopener noreferrer" class="bonus-btn">Sign Up</a>
+                        </div>
+                    </div>
+                    
+                    <!-- RainBet Card -->
+                    <div class="bonus-card" style="background-image: url('assets/images/rainbet-bg.webp')">
+                        <div class="bonus-bg"></div>
+                        <div class="bonus-content">
+                            <div class="bonus-logo">
+                                <img src="assets/images/logos/rainbet.png" alt="RainBet Logo" class="logo-img">
+                            </div>
+                            <div class="bonus-code">
+                                <span>Code: <strong>GDA</strong></span>
+                            </div>
+                            <ul class="bonus-list">
+                                <li>Instant Rakeback</li>
+                                <li>Daily, Weekly & Monthly Bonus</li>
+                                <li>Level Up Reload</li>
+                            </ul>
+                            <a href="https://rainbet.com/?r=gda" target="_blank" rel="noopener noreferrer" class="bonus-btn">Sign Up</a>
+                        </div>
+                    </div>
+                    
+                    <!-- ClashGG Card -->
+                    <div class="bonus-card" style="background-image: url('assets/images/clash-bg.webp')">
+                        <div class="bonus-bg"></div>
+                        <div class="bonus-content">
+                            <div class="bonus-logo">
+                                <img src="assets/images/logos/clash.png" alt="ClashGG Logo" class="logo-img">
+                            </div>
+                            <div class="bonus-code">
+                                <span>Code: <strong>GOLDACE</strong></span>
+                            </div>
+                            <ul class="bonus-list">
+                                <li>Free Case on Sign Up</li>
+                                <li>5% Deposit Bonus</li>
+                                <li>Level Up Case</li>
+                            </ul>
+                            <a href="https://clash.gg/welcome/r/GOLDACE" target="_blank" rel="noopener noreferrer" class="bonus-btn">Sign Up</a>
+                        </div>
+                    </div>
+                    
+                    <!-- SkinRave Card -->
+                    <div class="bonus-card" style="background-image: url('assets/images/rave-bg.webp')">
+                        <div class="bonus-bg"></div>
+                        <div class="bonus-content">
+                            <div class="bonus-logo">
+                                <img src="assets/images/logos/rave.svg" alt="SkinRave Logo" class="logo-img">
+                            </div>
+                            <div class="bonus-code">
+                                <span>Code: <strong>GOLDACE</strong></span>
+                            </div>
+                            <ul class="bonus-list">
+                                <li>Free Case on Sign Up</li>
+                                <li>Daily Free Case</li>
+                                <li>5% Deposit Bonus</li>
+                            </ul>
+                            <a href="https://skinrave.gg/en?r=goldace" target="_blank" rel="noopener noreferrer" class="bonus-btn">Sign Up</a>
+                        </div>
+                    </div>
+                    
+                    <!-- CSGOEmpire Card -->
+                    <div class="bonus-card" style="background-image: url('assets/images/empire-bg.jpg')">
+                        <div class="bonus-bg"></div>
+                        <div class="bonus-content">
+                            <div class="bonus-logo">
+                                <img src="assets/images/logos/empire.svg" alt="CSGOEmpire Logo" class="logo-img">
+                            </div>
+                            <div class="bonus-code">
+                                <span>Code: <strong>GOLDACE</strong></span>
+                            </div>
+                            <ul class="bonus-list">
+                                <li>Free Case on Sign Up</li>
+                                <li>Daily Free Case</li>
+                                <li>5% Deposit Bonus</li>
+                            </ul>
+                            <a href="https://csgoempire.com/r/GoldAce" target="_blank" rel="noopener noreferrer" class="bonus-btn">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+        
+    <footer class="site-footer section-animate">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Section 1: Logo & Tagline -->
+                <div class="footer-section logo-section">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.png" alt="GoldAce Logo">
+                        <span class="logo-text">GoldAce</span>
+                    </div>
+                    <p class="tagline">Your All-in-One Hub for Leaderboards, Streams & Rewards</p>
+                </div>
+
+                <!-- Section 2: Quick Links -->
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#bonuses">Bonus</a></li>
+                        <li><a href="leaderboard.html">Leaderboard</a></li>
+                    </ul>
+                </div>
+
+                <!-- Section 3: Social Media -->
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="https://kick.com/GoldAceCS" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <img src="assets/images/kick-logo.webp" alt="Kick" class="kick-logo">
+                            <span>Kick</span>
+                        </a>
+                        <a href="https://www.youtube.com/@GoldAceCS" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-youtube"></i> YouTube
+                        </a>
+                        <a href="https://discord.gg/rTdh49H2" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-discord"></i> Discord
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Section 4: 18+ Warning -->
+                <div class="footer-section warning-section">
+                    <div class="age-warning">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span>18+ Only</span>
+                    </div>
+                    <p class="responsible-gambling">
+                        Please gamble responsibly. Gambling can be addictive. Play responsibly and in moderation.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section 5: Copyright & Credits -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 GoldAce. All rights reserved.</p>
+                <p class="designer-credit">Designed by <a href="https://discord.com/users/1261209928803287154" target="_blank" rel="noopener noreferrer" class="designer-link">@Llakadmatatag</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/header-scroll.js"></script>
+</body>
+</html>
